@@ -22,7 +22,6 @@ const Navbar = () => {
 export default Navbar
 
 const Wrapper = styled.nav`
-
 position: fixed;
 background-color: #fafafa;
 height: 7rem;
@@ -39,7 +38,7 @@ width: 100%;
 }
 
 .inner-name {
-    padding-left: 3.15rem;
+    padding-left: 5.15rem;
     margin: 0 auto;
     letter-spacing: 0.2em;
     font-size: 15px;
@@ -47,7 +46,7 @@ width: 100%;
 }
 
 .dropdown {
-    text-align: right;
+    padding-right: 2rem;
 }
 
 `

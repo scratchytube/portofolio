@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
+import { Navbar, SomethingFun } from './Components' 
+
 
 const App = () => {
 
@@ -7,6 +8,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <SomethingFun />
     </div>
   )
 }
