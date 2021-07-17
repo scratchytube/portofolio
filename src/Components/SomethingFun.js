@@ -19,10 +19,11 @@ background-color: #445D7B;
 display: flex;
 align-items: center;
 justify-content: center;
+
 img {
-    height: 500px;
-    width: 60%;
-    padding-top: 150px;
+    height: 550px;
+    width: 500px;
+    padding-top: 75px;
     margin: 0 auto;
 }
 

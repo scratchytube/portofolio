@@ -11,7 +11,7 @@ const Navbar = () => {
                         <p>Brian Sahota</p>
                     </div>
                     <div className="dropdown">
-                        <Hamburger className='hamdurger' size={20}/>
+                        <Hamburger size={20}/>
                     </div>
                 </div>
             </div>
