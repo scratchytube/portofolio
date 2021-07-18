@@ -6,10 +6,15 @@ const ProjectCard = ({ project }) => {
 
     return (
         <Wrapper>
-            <div className='card'>
+            <article>
                 <img src={image} alt={name} />
-                <p><span>{name}</span>{description}</p>
-            </div>
+                <div className='card'>
+                    <h4>{name}</h4>
+                    <p>{description}</p>
+                    <button>Github</button>
+                    <button>Live</button>
+                </div>
+            </article>
         </Wrapper>
     )
 }
@@ -17,27 +22,25 @@ const ProjectCard = ({ project }) => {
 export default ProjectCard
 
 const Wrapper = styled.section`
-
 display: grid;
 row-gap: 3rem;
 
+article {
+    max-width: 1024px;
+    margin-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 .card {
-    display: inline-block;
-    width: 45%;
-    // height: 50%;
-    margin: 20px;
-    background-color: #fff;
-    text-align: center;
+    background-color: #eee;
 }
 
 img {
-    width: 10%;
-    height: 45%;
+    width: 100%;
     display: block;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+    width: 500px;
+    height: 350px;
 }
-
 
 `

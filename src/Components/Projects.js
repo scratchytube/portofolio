@@ -37,4 +37,8 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
+
+.project-list {
+    margin-top 50px;
+}
 `
