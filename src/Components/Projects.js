@@ -9,7 +9,7 @@ const Projects = () => {
             id: 1,
             name: 'peadars woodshop',
             description: 'this righ her is my uncs website gawd im finna make it with this one juu hurdd',
-            image: "https://i.imgur.com/XZEqfRD.png"
+            image: "https://i.imgur.com/yunTgAr.png"
         }
     ]
 
@@ -20,6 +20,7 @@ const Projects = () => {
     return (
         <Wrapper>
             <h1>Projects</h1>
+            <hr />
             <div className='project-list'>
                 { mappedProjects }
             </div>
@@ -33,10 +34,19 @@ const Wrapper = styled.div`
 h1 {
     text-align: center;
     margin-top: 5rem;
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    // border: none;
+    border-top: 1px solid #9e8a8a;
+    // background-color: #9e8a8a;
 }
 
 .project-list {
