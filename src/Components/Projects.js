@@ -8,8 +8,8 @@ const Projects = () => {
         {
             id: 1,
             name: 'peadars woodshop',
-            description: 'this righ her is my uncs ecommerce site',
-            image: "https://i.imgur.com/LbaeVHv.png"
+            description: 'this righ her is my uncs website gawd im finna make it with this one juu hurdd',
+            image: "https://i.imgur.com/XZEqfRD.png"
         }
     ]
 
@@ -32,7 +32,8 @@ export default Projects
 const Wrapper = styled.div`
 h1 {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
+    font-size: 2.5em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2em;
