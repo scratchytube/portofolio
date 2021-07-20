@@ -28,7 +28,6 @@ const Projects = () => {
     return (
         <Wrapper>
             <h1>Projects</h1>
-            <hr />
             <div className='project-list'>
                 { mappedProjects }
             </div>
@@ -39,10 +38,11 @@ const Projects = () => {
 export default Projects
 
 const Wrapper = styled.div`
+
 h1 {
     text-align: center;
     margin-top: 5rem;
-    font-size: 3.5em;
+    font-size: 3em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -50,5 +50,20 @@ h1 {
 
 .project-list {
     margin-top 50px;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 3.5em;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+    
+    .project-list {
+        margin-top 50px;
+    }
 }
 `

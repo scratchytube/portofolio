@@ -10,6 +10,7 @@ const ProjectCard = ({ project }) => {
     
     return (
         <Wrapper>
+            <hr />
             <article>
                     <img src={image} alt={name} />
                     <h4>{name}</h4>
@@ -31,7 +32,7 @@ export default ProjectCard
 const Wrapper = styled.section`
 display: grid;
 row-gap: 3rem;
-margin-top: 2rem;
+// margin-top: 2rem;
 
 article {
     max-width: 300px;
@@ -70,7 +71,7 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 80px;
+    // margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
@@ -78,6 +79,7 @@ img {
         max-width: 1050px;
         margin: 0 auto;
         margin-bottom: 40px;
+        margin-top: 50px;
     }
     img {
         width: 100%;
@@ -98,7 +100,6 @@ img {
 
     .stack {
         display: flex;
-        // flex-direction: row;
     }
     
     
