@@ -32,7 +32,7 @@ export default ProjectCard
 const Wrapper = styled.section`
 display: grid;
 row-gap: 3rem;
-// margin-top: 2rem;
+margin-bottom: 2rem;
 
 article {
     max-width: 300px;
@@ -46,7 +46,7 @@ p {
     text-align: center;
     letter-spacing: 0.2em
     margin-bottom: 1rem;
-    font-size: 1.15rem;
+    font-size: 0.90rem;
     font-weight: 200;
 }
 
@@ -55,7 +55,7 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     padding-top: 1rem;
-    font-size: 1em;
+    font-size: 1.15em;
 }
 
 img {
@@ -71,7 +71,6 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    // margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
@@ -81,6 +80,7 @@ img {
         margin-bottom: 40px;
         margin-top: 50px;
     }
+
     img {
         width: 100%;
         display: block;
@@ -88,6 +88,14 @@ img {
         height: 700px;
         border-radius: 1%;
         object-fit: cover;
+    }
+
+    p {
+        text-align: center;
+        letter-spacing: 0.2em
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+        font-weight: 200;
     }
 
     h4 {
