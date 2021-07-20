@@ -9,9 +9,14 @@ body {
   background-color: #C26868;
 }
 
-
-
-
+hr {
+  margin: 0 auto;
+  width: 90%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #652c29;
+  padding: 0;
+}
 
 * {
   box-sizing: border-box;

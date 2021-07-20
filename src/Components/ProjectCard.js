@@ -2,21 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ProjectCard = ({ project }) => {
-    const { name, description, image } = project
-
+    const { name, description, image, stack } = project
+    
+    // const thisStack = stack.map((s) => {
+    //     return  <span>{s}</span>
+    // })
+    
     return (
         <Wrapper>
             <article>
-                <img src={image} alt={name} />
-                
+                    <img src={image} alt={name} />
                     <h4>{name}</h4>
                     <p>{description}</p>
+                    <div className="stack">
+                        {/* <p>{thisStack}</p> */}
+                    </div>
                     <div className="pj-buttons">
                         <button>Github</button>
                         <button>Live</button>
                     </div>
-                    
-                
             </article>
         </Wrapper>
     )
@@ -90,6 +94,11 @@ img {
         letter-spacing: 0.2em;
         padding-top: 2rem;
         font-size: 2em;
+    }
+
+    .stack {
+        display: flex;
+        // flex-direction: row;
     }
     
     
