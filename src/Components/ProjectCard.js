@@ -32,7 +32,7 @@ export default ProjectCard
 const Wrapper = styled.section`
 display: grid;
 row-gap: 3rem;
-margin-bottom: 2rem;
+// margin-bottom: 2rem;
 
 article {
     max-width: 300px;
@@ -74,6 +74,9 @@ img {
 }
 
 @media (min-width: 992px) {
+
+    margin-bottom: 2rem;
+
     article{
         max-width: 1050px;
         margin: 0 auto;
