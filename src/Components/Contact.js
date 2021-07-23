@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import shake from '../assets/shake.svg'
 
 const Contact = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        alert("Thanks i'll get back to you")
+        setName('')
+        setEmail('')
+        setMessage('')
+    }
+
     return (
         <Wrapper>
 
@@ -11,16 +24,20 @@ const Contact = () => {
                     <img src={shake} alt="" />
                 </div>
                 <div className="right">
-                    <h3>Talk to me</h3>
-                    <form className='contact-form'>
+                    <h3>Would love to hear from you</h3>
+                    <form 
+                    action="https://formsubmit.io/send/bpsahota@gmail.com" 
+                    method="POST" onSubmit={handleSubmit} 
+                    className='contact-form'
+                    >
                         <label>Name</label>
-                        <input className='input-field' type="text" name='name'/>
+                        <input value={name} onChange={(e) => setName(e.target.value)} className='input-field' type="text" name='name' required/>
 
                         <label>Email</label>
-                        <input className='input-field' type="text" name='subject' />
+                        <input value={email} onChange={(e) => setEmail(e.target.value)} className='input-field' type="text" name='subject' required />
 
                         <label>Message</label>
-                        <textarea className='input-field' name="message"></textarea>
+                        <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='input-field' name="message"></textarea>
 
                         <input className='submit-btn' type="submit" value='Send it' />
                     </form>
@@ -32,12 +49,14 @@ const Contact = () => {
 
 export default Contact
 const Wrapper = styled.section`
+letter-spacing: 0.2em;
 color: #fafafa;
 margin-bottom: 40px;
 .main-container {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr; 
+    grid-column-gap: 14px;
 }
 
 .left {
