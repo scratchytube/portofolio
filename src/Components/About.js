@@ -18,38 +18,17 @@ const About = () => {
 
 export default About
 const Wrapper = styled.section`
-position: relative;
-width: 100%;
-height: 100%;
+
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: 1fr; 
+
+color: #fafafa;
 background-color: #445D7B;
 height: 30rem;
-color: #fff;
-letter-spacing: 0.2em;
+
 
 .split {
-    position: absolute;
-    width: 50%;
-    font-weight: 200;
-}
-
-.split.left {
-    left: 0;
-    margin-top: 3rem;
-}
-
-.split.right {
-    right: 0;
-    
-    margin-top: 3rem;
-}
-
-h1 {
-    text-align: center;
-}
-
-p {
-    padding-left: 3rem;
-    margin-top: 2.5rem;
-}
+ 
 
 `
