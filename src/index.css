@@ -23,7 +23,7 @@ hr {
   overflow-x: hidden;
 }
 
-nav {
+/* nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
@@ -106,4 +106,4 @@ nav {
   .social-icons a:hover {
     color: black;
   }
-}
+} */
