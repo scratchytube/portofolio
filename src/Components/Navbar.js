@@ -5,13 +5,18 @@ import { Divide as Hamburger } from 'hamburger-react'
 const Navbar = () => {
     return (
         <Wrapper>
-            <div className='nav-center'>
+            <div className='nav'>
                 <div className="nav-header">
                     <div className='inner-name'>
                         <p>Brian Sahota</p>
                     </div>
                     <div className="dropdown">
-                        <Hamburger size={20}/>
+                            <Hamburger className='hamburger' size={20}/>
+                        <ul>
+                            <li>Projects</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -21,14 +26,15 @@ const Navbar = () => {
 
 export default Navbar
 
-const Wrapper = styled.nav`
+const Wrapper = styled.header`
 position: fixed;
 background-color: #fafafa;
 height: 7rem;
+text-align: center;
 width: 100%;
+z-index: 999;
 
-
-.nav-center {
+.nav {
     margin: 0 auto;
 }
 

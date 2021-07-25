@@ -1,6 +1,7 @@
 import React from 'react'
 import { 
-  Navbar, 
+  // Navbar, 
+  Header,
   SomethingFun, 
   Projects, 
   About, 
@@ -13,7 +14,8 @@ const App = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header />
       <SomethingFun />
       <Projects />
       <About />
