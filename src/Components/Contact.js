@@ -60,7 +60,7 @@ margin-bottom: 40px;
 }
 
 .left {
-    padding-top: 50px;
+    padding-top: 90px;
 }
     
 
