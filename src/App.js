@@ -5,7 +5,8 @@ import {
   SomethingFun, 
   Projects, 
   About, 
-  Contact 
+  Contact,
+  Sidebar,
 } from './Components' 
 
 
@@ -16,6 +17,7 @@ const App = () => {
     <div>
       {/* <Navbar /> */}
       <Header />
+      <Sidebar />
       <SomethingFun />
       <Projects />
       <About />

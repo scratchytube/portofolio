@@ -23,87 +23,91 @@ hr {
   overflow-x: hidden;
 }
 
-/* nav {
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
-}
-.nav-header {
+/* .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  text-transform: uppercase;
 }
+
 .nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  color: #black;
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
   cursor: pointer;
 }
+
 .links a {
-  color: var(--clr-grey-3);
   font-size: 1rem;
   text-transform: capitalize;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.1rem;
   display: block;
   padding: 0.5rem 1rem;
-  transition: var(--transition);
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: black;
 }
+
 .links a:hover {
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  background: hsl(210, 31%, 80%);
+  color: white;
   padding-left: 1.5rem;
+  color: #C26868;;
 }
+
 .social-icons {
   display: none;
 }
-.links-container {
-  height: 0;
-  overflow: hidden;
-  transition: var(--transition);
-}
-.show-container {
-  height: 10rem;
-}
+
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+      max-width: 1170px;
+      margin: 0 auto;  
+      display: flex;
+      align-items: center;  
+      justify-content: space-between;
+      padding: 1rem;
   }
+
   .nav-header {
-    padding: 0;
+      padding: 0;
   }
+
   .nav-toggle {
-    display: none;
+      display: none;
   }
+
   .links-container {
-    height: auto !important;
+      height: auto !important;
+      padding-right: 3.75rem;
   }
+
   .links {
-    display: flex;
+      display: flex;
   }
+
   .links a {
-    padding: 0;
-    margin: 0 0.5rem;
+      padding: 0;
+      margin: 0 0.5rem;
   }
+
   .links a:hover {
-    padding: 0;
-    background: transparent;
+      padding: 0;
+      background: transparent;
   }
+
   .social-icons {
-    display: flex;
+      display: flex;
+      padding-right: 1rem;
   }
+
   .social-icons a {
-    margin: 0 0.5rem;
-    color: black;
-    transition: all 0.3s linear;
-  }
-  .social-icons a:hover {
-    color: black;
+      margin: 0 0.5rem;
+      color: black;
+      transition: all 0.3s linear;
   }
 } */

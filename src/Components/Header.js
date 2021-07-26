@@ -28,10 +28,10 @@ const Header = () => {
                 </div>
                 <ul className='social-icons'>
                     <li>
-                        <a href="www.github.com"><FaGithub /></a>
+                        <a href="https://github.com/scratchytube"><FaGithub /></a>
                     </li>
                     <li>
-                        <a href="www.linkedIn.com"><FaLinkedin /></a>
+                        <a href="https://www.linkedin.com/in/bsahota"><FaLinkedin /></a>
                     </li>
                 </ul>
             </div>
@@ -42,6 +42,8 @@ const Header = () => {
 export default Header
 
 const Wrapper = styled.nav`
+position: fixed;
+width: 100%;
 background-color: #fafafa;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
@@ -64,21 +66,21 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .links a {
-font-size: 1rem;
-text-transform: capitalize;
-letter-spacing: 0.1rem;
-display: block;
-padding: 0.5rem 1rem;
-transition: all 0.3s linear;
-text-decoration: none;
-color: #C26868;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    color: black;
 }
 
 .links a:hover {
     background: hsl(210, 31%, 80%);
     color: white;
     padding-left: 1.5rem;
-    color: #445D7B;
+    color: #C26868;;
 }
 
 .social-icons {
@@ -105,6 +107,7 @@ color: #C26868;
 
     .links-container {
         height: auto !important;
+        padding-right: 3.75rem;
     }
 
     .links {
@@ -113,7 +116,7 @@ color: #C26868;
 
     .links a {
         padding: 0;
-        margin 0 0.5rem;
+        margin: 0 0.5rem;
     }
 
     .links a:hover {
@@ -123,6 +126,7 @@ color: #C26868;
 
     .social-icons {
         display: flex;
+        padding-right: 1rem;
     }
 
     .social-icons a {
