@@ -4,7 +4,6 @@ import Projects from './Projects'
 import About from './About'
 import Contact from './Contact'
 import Header from './Header'
-import Sidebar from './Sidebar'
 
 export {
     // Navbar,
@@ -13,5 +12,4 @@ export {
     About,
     Contact,
     Header,
-    Sidebar,
 }

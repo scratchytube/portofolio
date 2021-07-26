@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Divide as Hamburger } from 'hamburger-react'
 import { FaLinkedin, FaGithub  } from 'react-icons/fa';
 
 const Header = () => {
+    const [showLinks, setShowLinks] = useState(false)
+
     return (
         <Wrapper>
             <div className='nav-center'>
                 <div className="nav-header">
                     <h3>Brian Sahota</h3>
-                    <button className="nav-toggle">
+                    <button onClick={() => setShowLinks(!showLinks)} className="nav-toggle">
                         <Hamburger size={20}/>
                     </button>
                 </div>
-                <div className="links-container show-container">
+                <div className={`${
+                    showLinks ? "links-container show-container" : "links-container"}`} >
                     <ul className="links">
                         <li>
                             <a href="#">Projects</a>
@@ -86,6 +89,15 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 .social-icons {
     display: none;
 }
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-container {
+    height: 10rem;
+  }
 
 @media screen and (min-width: 800px) {
     .nav-center {
