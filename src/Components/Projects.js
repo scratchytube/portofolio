@@ -26,7 +26,7 @@ const Projects = () => {
     ))
 
     return (
-        <Wrapper>
+        <Wrapper id='projects'>
             <h1>Projects</h1>
             <div className='project-list'>
                 { mappedProjects }

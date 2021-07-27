@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
+// import { Switch, Route } from 'react-router-dom'
 import { 
-  // Navbar, 
   Header,
   SomethingFun, 
   Projects, 
@@ -10,16 +10,30 @@ import {
 
 
 const App = () => {
+  const projectRef = useRef()
+  const aboutRef = useRef()
+  const contactRef = useRef()
+
+  const scrollToProjects = () => {
+    projectRef.current.scrollIntoView({behavior: 'smooth'})
+  }
+
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({behavior: 'smooth'})
+  }
+
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({behavior: 'smooth'})
+  }
 
 
   return (
     <div>
-      {/* <Navbar /> */}
-      <Header />
+      <Header scrollToProjects={scrollToProjects} scrollToAbout={scrollToAbout} scrollToContact={scrollToContact} />
       <SomethingFun />
-      <Projects />
-      <About />
-      <Contact />
+      <Projects ref={projectRef} />
+      <About ref={aboutRef} />
+      <Contact ref={contactRef} />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Divide as Hamburger } from 'hamburger-react'
 import { FaLinkedin, FaGithub  } from 'react-icons/fa';
 
-const Header = () => {
+const Header = (scrollToProjects, scrollToAbout, scrollToContact) => {
     const [showLinks, setShowLinks] = useState(false)
 
     return (
@@ -18,14 +18,14 @@ const Header = () => {
                 <div className={`${
                     showLinks ? "links-container show-container" : "links-container"}`} >
                     <ul className="links">
-                        <li>
-                            <a href="#">Projects</a>
+                        <li onClick={scrollToProjects}>
+                            <a href="#project">Projects</a>
                         </li>
-                        <li>
-                            <a href="#">About me</a>
+                        <li onClick={scrollToAbout}>
+                            <a href="#about">About me</a>
                         </li>
-                        <li>
-                            <a href="#">Contact me</a>
+                        <li onClick={scrollToContact}>
+                            <a href="#contact">Contact me</a>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +96,7 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s linear;
   }
   .show-container {
-    height: 10rem;
+    height: 8rem;
   }
 
 @media screen and (min-width: 800px) {
@@ -119,7 +119,7 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
     .links-container {
         height: auto !important;
-        padding-right: 3.75rem;
+        // padding-right: 3.75rem;
     }
 
     .links {
