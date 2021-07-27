@@ -17,7 +17,7 @@ const Contact = () => {
     }
 
     return (
-        <Wrapper id='contact'>
+        <Wrapper>
 
             <div className="main-container">
                 <div className="left">

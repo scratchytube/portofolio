@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import ScrollTo from "react-scroll-into-view";
 import { Divide as Hamburger } from 'hamburger-react'
 import { FaLinkedin, FaGithub  } from 'react-icons/fa';
 
-const Header = (scrollToProjects, scrollToAbout, scrollToContact) => {
+const Header = () => {
     const [showLinks, setShowLinks] = useState(false)
 
     return (
@@ -18,14 +19,20 @@ const Header = (scrollToProjects, scrollToAbout, scrollToContact) => {
                 <div className={`${
                     showLinks ? "links-container show-container" : "links-container"}`} >
                     <ul className="links">
-                        <li onClick={scrollToProjects}>
-                            <a href="#project">Projects</a>
+                        <li>
+                            <ScrollTo >
+                                <a>Projects</a>
+                            </ScrollTo>
                         </li>
-                        <li onClick={scrollToAbout}>
-                            <a href="#about">About me</a>
+                        <li>
+                            <ScrollTo>
+                                <a>About me</a>
+                            </ScrollTo>
                         </li>
-                        <li onClick={scrollToContact}>
-                            <a href="#contact">Contact me</a>
+                        <li>
+                            <ScrollTo>
+                                <a>Contact me</a>
+                            </ScrollTo>
                         </li>
                     </ul>
                 </div>
@@ -119,7 +126,7 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
     .links-container {
         height: auto !important;
-        // padding-right: 3.75rem;
+        padding-right: 3.75rem;
     }
 
     .links {

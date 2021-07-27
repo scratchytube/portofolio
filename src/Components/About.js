@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const About = () => {
     return (
-       <Wrapper id='about'>
+       <Wrapper>
            <div className="split left">
                 <h1>hey i'm brian</h1>
                 <p>During my bootcamp journey I've crossed paths with brilliant instructors, a welcoming tech community and talented colleagues who continue to inspire me to this day. Throughout the rigorous curriculum I built five projects using React, Redux and Ruby on Rails to show my mastery of these technologies.</p>
